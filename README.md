@@ -1,5 +1,5 @@
 # etcd-docker
-Minimal Dockerfile for etcd execution on Alpine Linux for ARM/Raspberry PI
+Minimal Dockerfile for etcd running on ARM/Raspberry PI
 
 # Build
 ```
