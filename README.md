@@ -28,3 +28,23 @@ docker run \
   --initial-cluster-token tkn \
   --initial-cluster-state new
 ```
+
+# Test if etcd works
+## Write into etcd
+```bash
+docker exec -ti etcd /usr/local/bin/etcdctl --endpoints=localhost:2379 put foo bar
+```
+Should return
+```
+OK
+```
+
+## Read from etcd
+```bash
+docker exec -ti etcd /usr/local/bin/etcdctl --endpoints=localhost:2379 get foo
+```
+Should return
+```
+foo
+bar
+```
